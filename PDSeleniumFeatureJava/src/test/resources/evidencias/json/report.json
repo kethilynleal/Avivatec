@@ -1,0 +1,146 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-03T18:32:13.617Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22052100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.coletarDados(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3383592000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.setarConfiguracoes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2614100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.setandoEvidencias()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "CT01 - Cadastro Novo Cliente Sucesso",
+        "description": "",
+        "id": "cadastro-cliente;ct01---cadastro-novo-cliente-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 19879257300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1213407700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23594093600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencho tudo corretamente",
+            "match": {
+              "location": "TesteStep.preenchoTudoCorretamente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1290300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clico no botao de \"Cadastrar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cadastrar\"",
+                  "offset": 18
+                }
+              ],
+              "location": "TesteStep.clicoNoBotaoDe(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 614100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "tenho minha conta cadastrada com sucesso",
+            "match": {
+              "location": "TesteStep.tenhoMinhaContaCadastradaComSucesso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cadastro"
+          },
+          {
+            "name": "@Funcionais"
+          },
+          {
+            "name": "@cadastroCliente"
+          },
+          {
+            "name": "@regressivo"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro Cliente",
+    "description": "",
+    "id": "cadastro-cliente",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Cadastro.feature",
+    "tags": [
+      {
+        "name": "@Cadastro",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
+        }
+      }
+    ]
+  }
+]
